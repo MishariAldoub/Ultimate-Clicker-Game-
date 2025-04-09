@@ -1,15 +1,15 @@
-import { Component } from '@angular/core';
+import { Component, Input, Output } from '@angular/core';
 import { ClickButtonComponent } from '../click-button/click-button.component';
 
 @Component({
   selector: 'app-coins',
   standalone: true,
-  imports: [ClickButtonComponent],
+  imports: [],
   templateUrl: './coins.component.html',
   styleUrl: './coins.component.css',
 })
 export class CoinsComponent {
-  points() {
-    console.log(ClickButtonComponent);
-  }
+
+  @Input() clickCountCoins?: number
+
 }

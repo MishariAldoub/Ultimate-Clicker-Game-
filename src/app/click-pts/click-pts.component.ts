@@ -9,13 +9,18 @@ import { GameData } from '../../data/game-data';
 })
 export class ClickPtsComponent {
   // @Input() click!: GameData;
-  @Output() clickButton = new EventEmitter<GameData>();
+  @Input() clickCountPoints?: number
+  // @Output() clickButton = new EventEmitter<GameData>();
   // clickCount = 0;
-
+// message = "HELP ME"
   onClick() {
     // this.clickCount++;
     // this.click.number = this.clickCount;
     // this.clickButton.emit(this.click);
     // console.log(this.clickCount);
   }
+
+  // yert(){
+  // console.log("click counter from points", this.clickCountPoints)
+  // }
 }
