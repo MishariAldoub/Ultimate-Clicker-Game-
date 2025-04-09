@@ -22,7 +22,10 @@ export class ClickButtonComponent {
     this.Coins++
     // this.click.number = this.clickCount;
     // this.clickButton.emit(this.click);
-    console.log(this.clickCount)
+    if (this.clickCount > 10 ){
+      this.clickCount+=2
+    }
+    // console.log(this.clickCount)
   }
 
 
